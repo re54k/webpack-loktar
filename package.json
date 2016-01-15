@@ -1,0 +1,40 @@
+{
+  "name": "webpack-ftb",
+  "version": "1.0.0",
+  "description": "Webpack features testing boilerplate.",
+  "scripts": {
+    "clean": "rimraf static",
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:webpack",
+    "start": "node devServer.js",
+    "analyse": "node analyse.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re54k/webpack-ftb.git"
+  },
+  "keywords": [
+    "webpack",
+    "example",
+    "boilerplate"
+  ],
+  "author": "re54k <ponyowa@163.com> (https://github.com/re54k)",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/re54k/webpack-ftb/issues"
+  },
+  "homepage": "https://github.com/re54k/webpack-ftb",
+  "devDependencies": {
+    "exports-loader": "^0.6.2",
+    "expose-loader": "^0.7.1",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7",
+    "imports-loader": "^0.6.5",
+    "rimraf": "^2.4.3",
+    "webpack": "^1.9.6"
+  },
+  "dependencies": {
+    "moment": "^2.10.6"
+  }
+}

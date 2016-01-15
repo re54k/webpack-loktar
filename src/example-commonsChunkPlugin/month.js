@@ -1,0 +1,1 @@
+module.exports = new Date().getMonth() + 1;
